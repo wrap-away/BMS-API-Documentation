@@ -17,6 +17,7 @@ Note: All endpoints are concatenated to the host url
 
 |Endpoint|Purpose|Parameters|Method|
 |--------|--------|--------|--------|
+|`GETREGIONS`|Get a list of all cities with their codes (`RegionCode`) and names (`RegionName`)|NOTE:No cookies required for this request |GET|
 |`QUICKBOOK&type={TYPE}`|All open bookings in a region|TYPES: MT(Movies), CT(Events), PL(Plays), SP(Sports)|GET|
 |`GETPREFERREDCINEMAS`|`VenueCode` and `VenueName` for a region|NONE|GET|
 |`GETSHOWTIMESBYEVENTANDVENUE&f=json&dc={DATE}&vc={VenueCode}&ec={EventCode}`|Get show times for a particular venue|`DATE` in YYYYMMDD format. `VenueCode` & `EventCode` obtained from `GETPREFERREDCINEMAS` and `QUICKBOOK` methods respectively|GET|
